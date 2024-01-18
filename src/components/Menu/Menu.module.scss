@@ -1,0 +1,70 @@
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 20px 0;
+
+    :global {
+        .navbar {
+            .navbar-nav {
+                overflow: hidden;
+
+                .nav-link {
+                    color: #fff;
+                    font-size: 15px;
+                    line-height: 1.6;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    letter-spacing: 0.01em;
+                    transition: all .37s cubic-bezier(.15, .7, .78, 1);
+                    position: relative;
+                    overflow: hidden;
+                    margin-left: 15px;
+
+                    span {
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        overflow: hidden;
+                        position: relative;
+
+                        span {
+                            &:first-child{
+                                display: block;
+                                transition: all .37s cubic-bezier(.15, .7, .78, 1), opacity .37s linear;
+                            }
+                            &:last-child {
+                                position: absolute;
+                                opacity: 0;
+                                bottom: 0;
+                                left: 0;
+                                transform: translate(0, 100%);
+                                transition: all .37s cubic-bezier(.15, .7, .78, 1), opacity .37s linear;
+                            }
+                        }
+
+                    }
+
+                    &:hover {
+                  
+                        span {
+                            span {
+                                &:first-child{
+                                    opacity: 0;
+                                    transform: translate(0,-100%);
+                                }
+                                &:last-child {
+                                    opacity: 1;
+                                    transform: translate(0, 0);
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+}
