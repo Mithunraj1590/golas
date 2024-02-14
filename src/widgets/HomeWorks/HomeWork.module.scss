@@ -1,0 +1,26 @@
+@import "../../styles/util";
+
+.home_works{
+    color: #fff;
+    padding: 50px 0;
+    overflow: visible;
+    .project_wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .cards{
+            &+:nth-child(even){
+                margin-top: 30vh;
+            }
+            &+:nth-child(odd){
+                margin-top: 10vh;
+            }
+        }
+    }
+    .btn_wrap{
+        a{
+            max-width: max-content;
+            margin: auto;
+        }
+    }
+}

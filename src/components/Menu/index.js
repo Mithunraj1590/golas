@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -28,10 +29,18 @@ const Menu = () => {
                 </span>
              
               </Nav.Link>
+
               <Nav.Link href="#link">
                 <span>
                 <span>Service</span>
                 <span>Service</span>
+                </span>
+             
+              </Nav.Link>
+              <Nav.Link href="#link">
+                <span>
+                <span>Projects</span>
+                <span>projects</span>
                 </span>
              
               </Nav.Link>

@@ -1,0 +1,41 @@
+@import "../../styles/util";
+
+.project_card{
+    
+    .title{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 11;
+        color: #fff;
+        font-size: 50px;
+    }
+   
+    .image_wrap{ 
+        width:576px ;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+     
+        figure{
+            width: 100%;
+            @include aspectRatio(576, 746);
+             transform: scale(1.2);
+            position: relative;
+            img{
+                opacity: 0;
+               
+            }
+        }
+
+    }
+  
+    .card_footer{
+        p{
+            color: #fff;
+            font-size: 26px;
+        }
+    }
+}

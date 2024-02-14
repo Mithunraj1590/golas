@@ -1,0 +1,32 @@
+
+
+.footer{
+    padding: 100px 0;
+    .footer_bottom{
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            li{
+                font-size: 25px;
+                &+li{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .address{
+        address{
+            font-size: 25px;
+        }
+        a{
+            display: block;
+            font-size: 25px;
+        }
+    }
+    .footer_wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}

@@ -1,11 +1,16 @@
 import HomeBanner from "../../widgets/HomeBanner";
 import AboutBanner from "../../widgets/AboutBanner"
-
+import HomeAbout from "../../widgets/HomeAbout";
+import HomeWorks from "../../widgets/HomeWorks"
+import HomeService from "../../widgets/HomeServices"
 
 const setComponent = (widget) => {
   const components = {
     HomeBanner,
+    HomeAbout,
+    HomeWorks,
     AboutBanner,
+    HomeService,
   };
   return components[widget.widget_type] || components["default"];
 };
