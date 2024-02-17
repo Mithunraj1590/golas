@@ -12,22 +12,20 @@
     }
    
     .image_wrap{ 
-        width:576px ;
+        width:100%;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
         overflow: hidden;
+       
      
         figure{
             width: 100%;
             @include aspectRatio(576, 746);
              transform: scale(1.2);
             position: relative;
-            img{
-                opacity: 0;
-               
-            }
+           
         }
 
     }

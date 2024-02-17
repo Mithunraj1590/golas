@@ -24,8 +24,7 @@ const ProjectCard = ({ data}) => {
             })
 
            
-            tl.to(`.figure img`, {  opacity:1, yPercent: 10, duration: 5, ease:"none" });
-            tl.to(`.figure img`, {  opacity:0, duration: 4, ease:"none" });
+         
           
 
         },cardRef)
