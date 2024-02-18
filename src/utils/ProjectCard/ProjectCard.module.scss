@@ -18,13 +18,17 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
+        max-height: 48em;
        
      
         figure{
             width: 100%;
-            @include aspectRatio(576, 746);
+            @include aspectRatio(476, 546);
              transform: scale(1.2);
             position: relative;
+            @include min(1600){
+                @include aspectRatio(576, 746); 
+            }
            
         }
 
