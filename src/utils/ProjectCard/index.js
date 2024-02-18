@@ -22,7 +22,7 @@ const ProjectCard = ({ data, ParallaxContainer }) => {
                 start: resize > 992 ? "top 80%" : "top 90%",
                 end: "bottom 50%",
                 scrub: 1,
-                markers: true,
+                // markers: true,
             },
         })
         let img = context.selector(`img`)
