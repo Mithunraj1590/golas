@@ -5,9 +5,7 @@ const Footer = () => {
   return (
     <footer className={Style.footer}>
       <div className="container">
-        <div className={Style.footer_top}>
-
-        </div>
+        
         <div className="row">
           <div className="col-lg-4">
             <div className={Style.address}>
@@ -33,6 +31,14 @@ const Footer = () => {
               Our Story
             </div>
           </div>
+        </div>
+        <div className={Style.bottom_line}>
+           <div className={Style.icons}>
+                  sss
+           </div>
+           <div className={Style.copy_right}>
+              <p>copyright</p>
+           </div>
         </div>
       </div>
       <div className={Style.bottom_footer}>

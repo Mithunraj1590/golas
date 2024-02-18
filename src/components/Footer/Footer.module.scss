@@ -1,3 +1,4 @@
+@import "../../styles/util";
 .footer {
     padding: 100px 0;
     position: relative;
@@ -22,7 +23,10 @@
             padding: 0;
             margin: 0;
             max-width: max-content;
-            margin: auto;
+        
+            @include min(992){
+                margin: auto;
+            }
 
             li {
                 margin-top: 10px;
@@ -65,5 +69,14 @@
         position: absolute;
         top: 0;
         left: 0;
+    }
+    .bottom_line{
+      
+       justify-content: space-between;
+       color: #fff;
+       padding: 20px 0;
+       @include min(992){
+        display: flex;
+       }
     }
 }
