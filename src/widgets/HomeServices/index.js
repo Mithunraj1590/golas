@@ -2,7 +2,6 @@
 import React from 'react'
 import Style from "./HomeService.module.scss"
 import parse from "html-react-parser";
-import { useRef, useEffect } from "react";
 import useAnimation from './useAnimation';
 
 const HomeService = ({ data }) => {

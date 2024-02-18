@@ -20,7 +20,7 @@ const useAnimation = () => {
                 end: "bottom -500px",
                 scrub: 3,
                 stagger: 1,
-                markers: true,
+                // markers: true,
             },
         })
 
@@ -37,7 +37,7 @@ const useAnimation = () => {
                     })
 
                 }
-                console.log(index);
+                // console.log(index);
             });
         }
         setCard()
