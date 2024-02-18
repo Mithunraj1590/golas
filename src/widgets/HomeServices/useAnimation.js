@@ -8,7 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const useAnimation = () => {
     const Animcontainer = useRef()
-    console.log(Animcontainer.current);
     // useGSAP((context) => {
 
     //     // const el = self.selector(`.wrap`);
