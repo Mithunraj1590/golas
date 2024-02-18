@@ -28,7 +28,7 @@ const HomeWorks = ({ data }) => {
             })
 
            
-            tl.to(`.${Style.cards}`, {   yPercent: -30, duration: 10,ease:"none" });
+            // tl.to(`.${Style.cards}`, {   yPercent: -30, duration: 10,ease:"none" });
           
 
         },cardWrp)
@@ -37,7 +37,7 @@ const HomeWorks = ({ data }) => {
       
      
     return (
-        <section className={Style.home_works} ref={cardWrp}>
+        <section className={`${Style.home_works} ${data?.page && Style.innerpage}`} ref={cardWrp}>
             
             <div className="container">
                 <div className={Style.project_wrap}>
@@ -50,7 +50,7 @@ const HomeWorks = ({ data }) => {
                     })}
 
                 </div>
-                <div className={Style.btn_wrap}>
+                <div className={`${Style.btn_wrap} ${data?.page && "d-none"}`}>
                     <a href="" className="btn outline_btn">View all projects</a>
                 </div>
             </div>

@@ -11,10 +11,10 @@
       top: 50%;
       transform: translateY(-50%);
       .title{
-        font-size: 99px;
+        font-size: 60px;
         text-align: center;
         @include min(992){
-          
+          font-size: 99px;
         }
        span{
         display: inline-block;

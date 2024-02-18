@@ -8,9 +8,17 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        row-gap: 40px;
         .cards{
+            width: 100%;
+            @include min(992){
+                width: 43%;
+            }
             &+:nth-child(even){
-                margin-top: 30vh;
+                
+                @include min(992){
+                    margin-top: 30vh;
+                }
             }
             &+:nth-child(odd){
                 margin-top: 10vh;
@@ -18,9 +26,15 @@
         }
     }
     .btn_wrap{
+        margin-top: 100px;
         a{
             max-width: max-content;
             margin: auto;
         }
     }
+}
+
+.innerpage{
+    margin-top: 96px;
+    padding: 100px 0;
 }

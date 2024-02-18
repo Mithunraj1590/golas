@@ -1,32 +1,82 @@
-
-
-.footer{
+@import "../../styles/util";
+.footer {
     padding: 100px 0;
-    .footer_bottom{
-        ul{
+    position: relative;
+
+    .address {
+        padding-top: 50px;
+
+        a {
+            display: block;
+            margin-top: 10px;
+        }
+    }
+
+    .footer_menu {
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+
+        ul {
+            list-style-type: none;
+            text-align: left;
             padding: 0;
             margin: 0;
-            list-style-type: none;
-            li{
-                font-size: 25px;
-                &+li{
-                    margin-top: 10px;
-                }
+            max-width: max-content;
+        
+            @include min(992){
+                margin: auto;
+            }
+
+            li {
+                margin-top: 10px;
             }
         }
     }
-    .address{
-        address{
-            font-size: 25px;
-        }
-        a{
-            display: block;
-            font-size: 25px;
-        }
-    }
-    .footer_wrap{
+
+    .about {
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+        color: #fff;
+        background-color: rgba(255, 255, 255, .1);
+        border-radius: 100%;
+        flex: none;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        transition: all .2s;
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        position: relative;
+        width: 120px;
+        height: 120px;
+        margin-left: auto;
+    }
+
+    .bottom_footer {
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .video_overlay {
+        width: 100%;
+        height: 50%;
+        background-image: linear-gradient(#1d2024, rgba(29, 32, 36, 0));
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .bottom_line{
+      
+       justify-content: space-between;
+       color: #fff;
+       padding: 20px 0;
+       @include min(992){
+        display: flex;
+       }
     }
 }
