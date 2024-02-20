@@ -1,0 +1,20 @@
+@import "../../styles/util";
+
+.homearticles {
+    padding: 245px 0 125px;
+    .article_card {
+        padding: 92px 0;
+        border-bottom: 1px solid rgba(#fff, 0.1);
+    }
+    .article_image {
+        --bs-aspect-ratio: calc(368 / 276 * 100%);
+        max-width: 276px;
+        position: absolute;
+        bottom: 0;
+        transform: translateY(50%);
+        right: 0;
+        img {
+            object-fit: cover;
+        }
+    }
+}
