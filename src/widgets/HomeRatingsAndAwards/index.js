@@ -15,7 +15,7 @@ const HomeRatingsAndAwards = ({ data }) => {
           <div className={Style.awards_list}>
             {data?.awards?.map((item, i) => {
               return (
-                <div className={Style.award_card}>
+                <div className={Style.award_card} key={i}>
                   <figure className={`${Style.award_image} ratio`}>
                     <Image src={item?.image?.url} fill alt={item?.image?.alt} />
                   </figure>

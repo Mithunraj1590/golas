@@ -3,6 +3,7 @@ import Style from "./ProjectCard.module.scss"
 import gsap from 'gsap';
 import { useRef, useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from 'next/image';
 gsap.registerPlugin(ScrollTrigger);
 
 const ProjectCard = ({ data}) => {
@@ -37,7 +38,7 @@ const ProjectCard = ({ data}) => {
             <div className={`${Style.image_wrap}`}>
                 <h3 className={Style.title}>{data?.title}</h3>
                 <figure className='figure'>
-                    <img src={data?.img} alt="work" />
+                    <Image fill src={data?.img} alt="work" />
                 </figure>
             </div>
             <div className={Style.card_footer}>
