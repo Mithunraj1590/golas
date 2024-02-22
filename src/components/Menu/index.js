@@ -14,6 +14,7 @@ const Menu = () => {
           <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Toggle aria-controls="basic-navbar-nav" className="close" />
             <Nav className="ms-auto">
               <Nav.Link href="#home">
                 <span>

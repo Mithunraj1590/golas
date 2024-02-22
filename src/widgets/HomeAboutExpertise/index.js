@@ -33,9 +33,11 @@ const HomeAboutExpertise = ({ data }) => {
                 </div>
                 <div className={Style.info}>{parse(`${data?.info}`)}</div>
                 {data?.link ? (
-                  <a href={data?.link?.url} className="btn outline_btn">
-                    <div className="font">{data?.link?.text}</div>
-                  </a>
+                  <div className={`${Style.btn_wrap}`}>
+                    <a href={data?.link?.url} className="btn outline_btn">
+                      <div className="font">{data?.link?.text}</div>
+                    </a>
+                  </div>
                 ) : null}
               </div>
             </Col>

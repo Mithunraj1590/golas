@@ -26,10 +26,16 @@
         }
     }
     .btn_wrap{
-        margin-top: 100px;
+        margin-top: 50px;
+        @include min(992){
+            margin-top: 100px;
+        }
         a{
-            max-width: max-content;
+            
             margin: auto;
+            @include min(992){
+                max-width: max-content;
+            }
         }
     }
 }

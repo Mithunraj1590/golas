@@ -14,7 +14,10 @@
     }
     .about_image {
         --bs-aspect-ratio: calc(786 / 600 * 100%);
-        margin-top: 250px;
+        
+        @include min(992){
+            margin-top: 250px;
+        }
     }
     .wraper {
         grid-column-gap: 5em;
@@ -24,6 +27,9 @@
         display: flex;
         @include min(992) {
             grid-row-gap: 5em;
+        }
+        :global(.row){
+            row-gap: 30px;
         }
     }
 
@@ -69,6 +75,16 @@
                 font-weight: 400;
                 line-height: 1.7;
                 text-decoration: none;
+            }
+        }
+    }
+    .btn_wrap{
+        width: 100%;
+       
+        a{
+            width: 100%;
+            @include min(992){
+                max-width: max-content;
             }
         }
     }

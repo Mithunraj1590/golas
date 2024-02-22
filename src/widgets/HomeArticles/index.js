@@ -10,14 +10,15 @@ const HomeArticles = ({ data }) => {
         <div className={Style.article_head}>
           <Row>
             <Col></Col>
-            <Col>{data?.title}</Col>
+            <Col lg="6">
+              <p>{data?.title}</p></Col>
           </Row>
         </div>
         {data?.articles?.map((item, i) => {
           return (
             <div className={Style.article_card} key={i}>
               <Row>
-                <Col>
+                <Col lg="6">
                   <div className="position-relative">
                     <div className={Style.technology}>{item?.technology}</div>
                     <div className={Style.year}>{item?.year}</div>
@@ -30,13 +31,16 @@ const HomeArticles = ({ data }) => {
                     </figure>
                   </div>
                 </Col>
-                <Col>
+                <Col lg="6">
                   <h3 className={Style.article_title}>{item?.title}</h3>
                 </Col>
               </Row>
             </div>
           );
         })}
+           <div className={`${Style.btn_wrap}`}>
+                    <a href="" className="btn outline_btn">View all projects</a>
+                </div>
       </Container>
     </section>
   );

@@ -341,79 +341,79 @@ export const pageData = {
         },
       },
     },
-    {
-      id: "",
-      widget_type: "HomeRatingsAndAwards",
-      data: {
-        subtitle: "Rating and awards",
-        title: "Distinguished as market-leading Shopify developer",
-        awards: [
-          {
-            image: {
-              url: "/images/awards/1.webp",
-              alt: "Top eCommerce developers",
-            },
-            platform: "UK, Clutch, 2023",
-            title: "Top eCommerce developers",
-          },
-          {
-            image: {
-              url: "/images/awards/2.webp",
-              alt: "Top Shopify Company",
-            },
-            platform: "UK, Clutch, 2023",
-            title: "Top Shopify Company",
-          },
-          {
-            image: {
-              url: "/images/awards/3.webp",
-              alt: "Most reviewed eCommerce developers",
-            },
-            platform: "UK, The Manifest, 2023",
-            title: "Most reviewed eCommerce developers",
-          },
-          {
-            image: {
-              url: "/images/awards/4.webp",
-              alt: "Most reviewed Shopify company",
-            },
-            platform: "UK, The Manifest, 2023",
-            title: "Most reviewed eCommerce developers",
-          },
-          {
-            image: {
-              url: "/images/awards/5.svg",
-              alt: "Shopify Experts Agency",
-            },
-            platform: "Shopify, 2023",
-            title: "Most reviewed eCommerce developers",
-          },
-          {
-            image: {
-              url: "/images/awards/6.svg",
-              alt: "Accredited Agency",
-            },
-            platform: "DesignRush, 2023",
-            title: "Accredited Agency",
-          },
-          {
-            image: {
-              url: "/images/awards/7.svg",
-              alt: "x6 Awards on Behance",
-            },
-            platform: "Behance, 2023",
-            title: "x6 Awards on Behance",
-          },
-          {
-            image: {
-              url: "/images/awards/8.png",
-              alt: "Honorable Mention",
-            },
-            platform: "Awwwards, 2023",
-            title: "Honorable Mention",
-          },
-        ],
-      },
-    },
+    // {
+    //   id: "",
+    //   widget_type: "HomeRatingsAndAwards",
+    //   data: {
+    //     subtitle: "Rating and awards",
+    //     title: "Distinguished as market-leading Shopify developer",
+    //     awards: [
+    //       {
+    //         image: {
+    //           url: "/images/awards/1.webp",
+    //           alt: "Top eCommerce developers",
+    //         },
+    //         platform: "UK, Clutch, 2023",
+    //         title: "Top eCommerce developers",
+    //       },
+    //       {
+    //         image: {
+    //           url: "/images/awards/2.webp",
+    //           alt: "Top Shopify Company",
+    //         },
+    //         platform: "UK, Clutch, 2023",
+    //         title: "Top Shopify Company",
+    //       },
+    //       {
+    //         image: {
+    //           url: "/images/awards/3.webp",
+    //           alt: "Most reviewed eCommerce developers",
+    //         },
+    //         platform: "UK, The Manifest, 2023",
+    //         title: "Most reviewed eCommerce developers",
+    //       },
+    //       {
+    //         image: {
+    //           url: "/images/awards/4.webp",
+    //           alt: "Most reviewed Shopify company",
+    //         },
+    //         platform: "UK, The Manifest, 2023",
+    //         title: "Most reviewed eCommerce developers",
+    //       },
+    //       {
+    //         image: {
+    //           url: "/images/awards/5.svg",
+    //           alt: "Shopify Experts Agency",
+    //         },
+    //         platform: "Shopify, 2023",
+    //         title: "Most reviewed eCommerce developers",
+    //       },
+    //       {
+    //         image: {
+    //           url: "/images/awards/6.svg",
+    //           alt: "Accredited Agency",
+    //         },
+    //         platform: "DesignRush, 2023",
+    //         title: "Accredited Agency",
+    //       },
+    //       {
+    //         image: {
+    //           url: "/images/awards/7.svg",
+    //           alt: "x6 Awards on Behance",
+    //         },
+    //         platform: "Behance, 2023",
+    //         title: "x6 Awards on Behance",
+    //       },
+    //       {
+    //         image: {
+    //           url: "/images/awards/8.png",
+    //           alt: "Honorable Mention",
+    //         },
+    //         platform: "Awwwards, 2023",
+    //         title: "Honorable Mention",
+    //       },
+    //     ],
+    //   },
+    // },
   ],
 };
