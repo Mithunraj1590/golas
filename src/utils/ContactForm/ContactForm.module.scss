@@ -1,0 +1,202 @@
+@import "../../styles/util";
+.contact_form{
+    width: 100%;
+    @include min(1600){
+        padding-left: 80px;
+    }
+    .input_wrap{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        .input_field{
+            width: 100%;
+            position: relative;
+           
+            @include min(992){
+                width: 48%;  
+            }
+            label{
+                font-size: 16px;
+                margin-bottom: 0;
+                font-weight: 300;
+            }
+            :global{
+                .intl-tel-input{
+                    display: block;
+                    .selected-flag{
+                        color: #fff;
+                        display: flex;
+                        width: 26%;
+                        .iti-flag {
+                        
+                        }
+                        .selected-dial-code{
+                            flex: 1;
+                            padding-left: 5px;
+                        }
+                    }
+                    .flag-container{
+                  
+                        left: 0;
+                    }
+                    .form-control{
+                        padding-left: 100px!important;
+                    }
+                    .country-list{
+                        color: #000;
+                        width: 100%;
+                        margin-top: 7px;
+                    }
+                }
+
+                .selected{
+                    &__control{
+                        border: none;
+                        border-bottom: 1px solid #fff;
+                        background-color: transparent;
+                        border-radius: 0;
+                        box-shadow: none;
+                        outline: none;
+                        height: 50px;
+                        font-size: 16px;
+                        @include min(992){
+                            font-size: 18px;
+                        }
+                    }
+                    &__placeholder{
+                        color: #fff;
+                        opacity: .7;
+                        font-size: 16px;
+                        @include min(992){
+                            font-size: 18px;
+                        }
+                    }
+                    &__indicator-separator{
+                         display: none;
+                    }
+                    &__input-container{
+                        color: #fff;
+                        font-size: 16px;
+                        padding-left: 0;
+                        @include min(992){
+                          font-size: 18px;
+                        }
+                        
+                    }
+                    &__value-container{
+                        padding-left: 0;
+                    }
+                    &__single-value{
+                        color: #fff;
+                        font-size: 16px;
+                        @include min(992){
+                          font-size: 18px;
+                        }
+                    }
+                    &__menu{
+                      border-radius: 0;
+                      background-color: #fff;
+                    }
+                    &__menu-list{
+                        padding: 5px;
+
+                    }
+                    &__option{
+                  color: #000;
+                  font-size: 16px;
+                  @include min(992){
+                    font-size: 18px;
+                  }
+                    }
+                    &__option--is-focused{
+                        background-color: #000;
+                        color: #fff;
+
+                    }
+                    &__option--is-selected{
+                        background-color: #000;
+                        color: #fff;
+                    }
+
+                }
+
+                .form-control{
+                    background-color: transparent!important;
+                    box-shadow: none!important;
+                    border-radius: 0;
+                    width: 100%;
+                    border: none;
+                    font-size: 16px;
+                    border-bottom: 1px solid #fff;
+                    padding: 0;
+                    height: 50px;
+                    color: #fff!important;
+                    -webkit-text-fill-color:#fff;
+                    @include min(992){
+                        font-size: 18px;
+                    }
+                    &::placeholder{
+                        color: #fff;
+                        opacity: .7;
+                        font-size: 16px;
+                        @include min(992){
+                            font-size: 18px;
+                        }
+                    }
+                }
+              
+            }
+            &+.input_field{
+                margin-top: 24px;
+                @include min(992){
+                    margin-top: 0;
+                }
+            }
+           
+        }
+
+    }
+    textarea{
+        background-color: transparent!important;
+        outline: none!important;
+        border-radius: 0;
+        width: 100%;
+        border: none;
+        font-size: 16px;
+        border-bottom: 1px solid #fff;
+        padding: 0;
+        color: #fff!important;
+        @include min(992){
+            font-size: 18px;
+        }
+      
+    }
+    .form_info{
+        margin-top: 20px;
+        display: block;
+        font-size: 16px;
+     
+        span{
+            opacity: .7;
+        }
+        a{
+            text-decoration: underline;
+            color: #fff;
+            opacity: .7;
+            transition: all .3s ease-in-out;
+          
+            &:hover{
+                color: #fff;
+                opacity: 1;
+            }
+        }
+    }
+    .btn_wrap{
+        width: 200px;
+        padding-top: 30px;
+        button{
+            width: 100%;
+        }
+    }
+}

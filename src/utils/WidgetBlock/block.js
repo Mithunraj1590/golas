@@ -5,7 +5,10 @@ import HomeWorks from "../../widgets/HomeWorks";
 import HomeService from "../../widgets/HomeServices";
 import HomeArticles from "../../widgets/HomeArticles";
 import HomeAboutExpertise from "../../widgets/HomeAboutExpertise";
-import HomeRatingsAndAwards from "../../widgets/HomeRatingsAndAwards";
+import ProjectDetails from "../../widgets/ProjectDetails"
+import InnerBanner from "../../widgets/InnerBanner"
+import ProjectList from "../../widgets/ProjectList"
+import ContactUs from "../../widgets/ContactUs";
 
 const setComponent = (widget) => {
   const components = {
@@ -16,7 +19,10 @@ const setComponent = (widget) => {
     HomeService,
     HomeArticles,
     HomeAboutExpertise,
-    HomeRatingsAndAwards,
+    ProjectList,
+    ProjectDetails,
+    InnerBanner,
+    ContactUs
   };
   return components[widget.widget_type] || components["default"];
 };

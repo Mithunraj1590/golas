@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Style from "./ProjectCard.module.scss"
 import gsap from 'gsap';

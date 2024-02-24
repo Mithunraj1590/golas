@@ -1,0 +1,55 @@
+@import "../../styles/util";
+
+.innerBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  background-color: #b1b1b1;
+  color: #fff;
+  position: relative;
+  font-size: 1vw;
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+
+  .bg_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    will-change: transform;
+    height: 120%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      var(--image-path);
+    background-position: 0, 40%;
+    background-size: auto, cover;
+    transform-style: preserve-3d;
+    @include min(1200) {
+      height: 100%;
+    }
+
+    img {
+      object-fit: auto, cover;
+      object-position: 0, 50%;
+    }
+  }
+
+  .text_wrap {
+    position: relative;
+    z-index: 2;
+    max-width: 1140px;
+
+    .title {
+      text-align: center;
+      line-height: 1.2;
+      font-size: 8.8em;
+      max-width: 336px;
+      margin: auto;
+
+      @include min(576) {
+        max-width: 100%;
+        font-size: 4.7em;
+      }
+    }
+  }
+}

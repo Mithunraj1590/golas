@@ -1,0 +1,132 @@
+@import "../../styles/util";
+
+.profileListing {
+  padding: 50px 30px;
+  background-color: #fff;
+  color: #101214;
+  position: relative;
+
+  @include min(992) {
+    padding: size(50) size(61);
+  }
+
+  .profile_info {
+    top: 50px;
+    padding-bottom: 50px;
+    .name {
+      @include min(992) {
+        font-size: size(55);
+        margin-bottom: size(25);
+      }
+    }
+
+    .designation{
+        display: block;
+        margin-bottom: 50px;
+        opacity: 0.6;
+        font-size: size(16);
+
+        @include min(992){
+            display: none;
+        }
+    }
+
+    .description {
+      font-size: size(16);
+      line-height: 2;
+      font-weight: 300;
+      max-width: 382px;
+
+      margin-bottom: size(30);
+    }
+  }
+
+  .service {
+    margin-bottom: size(30);
+    .servicelist {
+      .service_type {
+        display: block;
+        margin-bottom: 20px;
+        font-weight: 300;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        font-weight: 300;
+        li {
+          margin-bottom: 10px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .totalservice {
+      font-size: size(70);
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .modal_btn {
+    border-bottom: 1px solid #000;
+    padding-bottom: 2px;
+    width: fit-content;
+    cursor: pointer;
+    transition: color ease 0.3s;
+    font-size: size(15);
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+  .image_case {
+    @include min(1200) {
+      padding-top: 70vh;
+    }
+
+    figure {
+      position: relative;
+      height: auto;
+      width: 100%;
+      display: inline-block;
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .content_area {
+      padding: 50px 0;
+
+      @include min(992) {
+        padding-top: 100px;
+      }
+
+      .content {
+        font-size: size(14);
+
+        span {
+          opacity: 0.3;
+          margin-bottom: 15px;
+          display: block;
+          letter-spacing: 0.2;
+        }
+
+        p {
+          margin-bottom: 20px;
+          font-weight: 300;
+          line-height: 1.8;
+          font-size: size(15.5);
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
