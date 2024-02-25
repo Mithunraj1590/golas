@@ -17,9 +17,9 @@ export const pageData = {
       data: {
         subtitle: "About",
         title:
-          "A multi-award-winning full-service digital agency providing a broad spectrum of digital solutions",
+          "A Multi-Award-Winning Full-Service Digital Marketing and Advertising Agency Offering 360-Degree Solutions in Kerala",
         description:
-          "<p>At Fourmeta, products come first. Sometimes that means taking an existing app and helping its creators make it much better.</p><p>And sometimes it means helping visionary founders take a faint glimmer of an idea and nurture it to life.</p>",
+          "<p>Welcome to GoalCreative (GC.) – Your key to digital success! Elevate your brand with our 360-degree digital marketing solutions in Kerala.</p><p>From enhancing online presence to nurturing visionary ideas, we're your partners in digital excellence.</p>",
         link: {
           text: "learn more",
           url: "/",
@@ -49,7 +49,7 @@ export const pageData = {
       widget_type: "HomeAbout",
       data: {
         subtitle: "Service",
-        title: "Using digital transformation to innovate and enhance brands",
+        title: "Break free from boundaries with us, empowering brands to evolve through innovative digital strategies",
         description:
           "<p>By combining UI & UX best practices with a strategic branding process, we use cutting-edge technology to develop inspiring products that meet the specific purpose and needs of your target audience.</p>",
       },
