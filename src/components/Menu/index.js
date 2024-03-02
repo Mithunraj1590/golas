@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Style from "./Menu.module.scss"
+import Image from 'next/image';
 
 const Menu = () => {
 
@@ -11,7 +12,11 @@ const Menu = () => {
     <header className={Style.header}>
       <Navbar expand="lg" className="">
         <div className='container'>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand href="#home">
+            <figure>
+              <Image src="/images/logo-w.png" fill alt='logo'></Image>
+            </figure>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className='hamburger'>
             <span></span>
             <span></span>
