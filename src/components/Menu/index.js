@@ -14,7 +14,7 @@ const Menu = () => {
         <div className='container'>
           <Navbar.Brand href="#home">
             <figure>
-              <Image src="/images/logo-w.png" fill alt='logo'></Image>
+              <Image src="/images/Logo-w.png" fill alt='logo'></Image>
             </figure>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className='hamburger'>
