@@ -24,7 +24,7 @@ const HomeService = ({ data }) => {
         end: "bottom -2000px",
         scrub: 3,
         stagger: 1,
-        markers: true,
+        // markers: true,
       },
     })
 
