@@ -1,0 +1,101 @@
+@import "../../styles/util";
+.homeabout {
+    padding: 50px 0;
+    @include min(992) {
+        padding: 100px 0;
+    }
+    .wraper {
+        grid-column-gap: 5em;
+        grid-row-gap: 2em;
+        flex-direction: column;
+        align-items: stretch;
+        display: flex;
+        @include min(992) {
+            grid-row-gap: 5em;
+        }
+    }
+
+    .subtitle {
+        font-size: 20px;
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+
+    .title {
+        color: #fff;
+        letter-spacing: -0.02em;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 1.3;
+        @include min(992) {
+            font-size: 4.7em;
+            line-height: 1;
+        }
+    }
+}
+
+.awards_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid #616366;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.award_card {
+    border: 1px solid #616366;
+    min-height: 314px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    &:not(:nth-child(4n + 1)) {
+        margin-left: -0.5px;
+    }
+    &:not(:nth-last-child(1), :nth-last-child(2), :nth-last-child(3), :nth-last-child(4)) {
+        margin-bottom: -0.5px;
+    }
+    &:nth-child(1) {
+        border-top-left-radius: 16px;
+    }
+    &:nth-child(4) {
+        border-top-right-radius: 16px;
+    }
+    &:nth-last-child(1) {
+        border-bottom-right-radius: 16px;
+    }
+    &:nth-last-child(4) {
+        border-bottom-left-radius: 16px;
+    }
+    .award_image {
+        --bs-aspect-ratio: calc(1 / 1 * 100%);
+        height: 100px;
+        width: auto;
+        margin-bottom: 40px;
+        img {
+            object-fit: contain;
+        }
+    }
+    .award_platform,
+    .award_title {
+        text-align: center;
+    }
+    .award_content {
+        margin-top: auto;
+    }
+    .award_platform {
+        letter-spacing: 0.02em;
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 1.75;
+        opacity: 0.5;
+    }
+    .award_title {
+        letter-spacing: 0.02em;
+        font-size: 1.2em;
+        font-weight: 400;
+        line-height: 1.7;
+        text-decoration: none;
+    }
+}

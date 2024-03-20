@@ -1,8 +1,8 @@
 import React from 'react'
 import Style from "./HomeAbout.module.scss"
-import parse from "html-react-parser"; 
+import parse from "html-react-parser";
 
-const HomeAbout = ({data}) => {
+const HomeAbout = ({ data }) => {
   // const { parse } = require("html-react-parser");
 
   return (
@@ -16,13 +16,15 @@ const HomeAbout = ({data}) => {
           <div className={Style.paragraph}>
             <div className={Style.subtitle}>{parse(`${data?.description}`)}</div>
             {data?.link ? (
-              <a href={data?.link?.url} className="btn outline_btn">
-              <div className="font">{data?.link?.text}</div>
-            </a>
-            ):(
+              <div className={`${Style.btn_wrap}`}>
+                <a href={data?.link?.url} className="btn outline_btn">
+                  <div className="font">{data?.link?.text}</div>
+                </a>
+              </div>
+            ) : (
               <></>
             )}
-          
+
           </div>
         </div>
       </div>

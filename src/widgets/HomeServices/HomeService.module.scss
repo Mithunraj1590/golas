@@ -1,6 +1,89 @@
 @import "../../styles/util";
 
+// .homeservice {
+//     width: 100%;
+//     height: 100vh;
+//     position: relative;
+//     overflow: hidden;
+//     .service_wrap{
+//         height: 100vh;
+//         width: 100%;
+//         position: absolute;
+//         .outer_wrap{
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             height: 100%;
+//             width: 100%;
+//         }
+
+//     }
+
+//     .img_vdo_wrap {
+//         position: absolute;
+//         width: 100%;
+//         height: 100%;
+//         z-index: 0;
+
+//         figure {
+//             position: relative;
+//             margin-bottom: 0;
+//             width: 100%;
+//             height: 100%;
+
+//             &::before {
+//                 content: "";
+//                 position: absolute;
+//                 left: 0;
+//                 top: 0;
+//                 width: 100%;
+//                 height: 100%;
+//                 background-color: rgba($color: #000000, $alpha: .3);
+//             }
+//         }
+//     }
+
+//     .service_content {
+//         position: relative;
+//         z-index: 1;
+//         text-align: center;
+
+//         .title {
+//             color: #fff;
+//             letter-spacing: -.02em;
+//             margin-top: 0;
+//             margin-bottom: 0;
+//             font-size: 50px;
+//             font-weight: 400;
+//             line-height: .9;
+//             @include min(992){
+//                 font-size: 6.5em;
+//             }
+//         }
+//         .service{
+//             display: flex;
+
+//             max-width: 800px;
+//             flex-wrap: wrap;
+//             justify-content: center;
+//             margin: auto;
+//             row-gap: 20px;
+//             margin-top: 60px;
+//             span{
+//                 padding: 10px 15px;
+//                 display: block;
+//                 border-radius: 10px;
+//                 backdrop-filter: blur(20px);
+//                 background-color: rgba(16,18,20,.25);
+//                 border: 1px solid rgba(255,255,255,.1);
+//                 margin: 0 10px;
+//             }
+//         }
+//     }
+// }
+
 .homeservice {
+<<<<<<< HEAD
     width: 100%;
     height: 100vh;
     position: relative;
@@ -31,19 +114,25 @@
         figure {
             position: relative;
             margin-bottom: 0;
+=======
+    .service_wrap {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .img_vdo_wrap {
+            position: absolute;
+>>>>>>> main
             width: 100%;
             height: 100%;
-
-            &::before {
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 0;
+            video {
                 width: 100%;
                 height: 100%;
-                background-color: rgba($color: #000000, $alpha: .3);
+                object-fit: cover;
             }
         }
+<<<<<<< HEAD
     }
 
     .service_content {
@@ -83,6 +172,62 @@
                 background-color: rgba(16, 18, 20, .25);
                 border: 1px solid rgba(255, 255, 255, .1);
                 margin: 0 10px;
+=======
+        .service_content {
+            z-index: 2;
+            .title {
+                color: #fff;
+                text-align: center;
+                letter-spacing: -0.02em;
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 50px;
+                font-weight: 400;
+                line-height: 0.9;
+                max-width: 800px;
+                margin-inline: auto;
+                margin-bottom: 30px;
+                @include min(992) {
+                    font-size: 6.5em;
+                }
+            }
+
+            .service_list {
+                list-style: none;
+                padding-left: 0;
+                margin-bottom: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                max-width: 800px;
+                margin-inline: auto;
+            }
+            .service {
+                border-radius: 8px;
+                padding: 8px 18px;
+                border: 1px solid rgba(#fff, 0.1);
+                backdrop-filter: blur(20px);
+                background-color: #10121440;
+                font-size: 16px;
+                transition: 0.3s ease all;
+                cursor: default;
+                a {
+                    cursor: pointer;
+                }
+                &:hover {
+                    color: #000;
+                    background-color: #fff;
+                    border: 1px solid #fff;
+                }
+                .service_item_url {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    inset: 0;
+                }
+>>>>>>> main
             }
         }
     }

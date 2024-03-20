@@ -23,8 +23,13 @@
 
         figure {
             width: 100%;
+<<<<<<< HEAD
             @include aspectRatio(476, 546);
             transform: scale(1.2);
+=======
+            @include aspectRatio(460, 500);
+             transform: scale(1.2);
+>>>>>>> main
             position: relative;
 
             @include min(1600) {

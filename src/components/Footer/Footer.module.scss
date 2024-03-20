@@ -5,10 +5,19 @@
 
     .address {
         padding-top: 50px;
+        max-width: 450px;
+        address{
+            font-size: 20px;
+            color: #fff;
+            font-weight: 500;
+        }
 
         a {
             display: block;
             margin-top: 10px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
         }
     }
 
@@ -25,11 +34,12 @@
             max-width: max-content;
         
             @include min(992){
-                margin: auto;
+                
             }
 
             li {
                 margin-top: 10px;
+                font-size: 20px;
             }
         }
     }
@@ -46,10 +56,20 @@
         text-decoration: none;
         transition: all .2s;
         display: flex;
-        position: relative;
-        width: 120px;
-        height: 120px;
+        position: absolute;
+        right: 20px;
+        width: 100px;
+        height: 100px;
         margin-left: auto;
+        top: 70%;
+        @include min(992){
+            width: 120px;
+            height: 120px;
+            top: 0; 
+        }
+    }
+    :global(.relative){
+        position: relative;
     }
 
     .bottom_footer {
